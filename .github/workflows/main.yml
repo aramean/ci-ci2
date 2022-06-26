@@ -15,7 +15,8 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
+          build: npm run build
+          start: npm start
           record: false
-          parallel: true
           project: test
           config-file: cypress/cypress.config.js
