@@ -10,8 +10,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 14
-      - run: npm init -y
-      - run: npm install
+      - run: npm install --save-dev start-server-and-test
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
